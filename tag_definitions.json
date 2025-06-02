@@ -1,0 +1,442 @@
+[
+  {
+    "tag_name": "adjective",
+    "description": "形容詞的印象を持つ語彙に適用されるタグ。例：silent, grand, bright など。ユーザー検索ではなく、GPTの構文的分類やメタ構造設計に活用される。",
+    "category": "grammatical_form"
+  },
+  {
+    "tag_name": "adverb",
+    "description": "副詞的印象や修飾的語感を持つ語に適用。例：quickly, softly など。ユーザー検索ではなく、GPTの構文的分類やメタ構造設計に活用される。",
+    "category": "grammatical_form"
+  },
+  {
+    "tag_name": "coined",
+    "description": "既存語彙に基づかず、新たに創作された語彙・命名に適用されるタグ。自然言語の既存構造や意味体系に依存せず、造語的発想で生み出された語に対応する。ユーザー検索ではなく、GPTの構文的分類やメタ構造設計に活用される。",
+    "category": "grammatical_form"
+  },
+  {
+    "tag_name": "nominalized",
+    "description": "本来動詞や形容詞だった語が名詞化された語彙に適用されるタグ。例：awakening, reflection。ユーザー検索ではなく、GPTの構文的分類やメタ構造設計に活用される。",
+    "category": "grammatical_form"
+  },
+  {
+    "tag_name": "noun",
+    "description": "名詞的な語彙や命名構造に付与されるタグ。人名、場所名、抽象概念など、主に名詞的役割を担う語に対応。ユーザー検索ではなく、GPTの構文的分類やメタ構造設計に活用される。",
+    "category": "grammatical_form"
+  },
+  {
+    "tag_name": "verb",
+    "description": "動作・行為を表す語彙に付与されるタグ。例：attack, run, chase など。ユーザー検索ではなく、GPTの構文的分類やメタ構造設計に活用される。",
+    "category": "grammatical_form"
+  },
+  {
+    "tag_name": "arabic",
+    "description": "アラビア語由来、またはアラブ世界に起源を持つ語形・語源に対して付与される。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "celtic",
+    "description": "ケルト語族（古代ケルト語、ゲール語、ブリトン語など）に由来する語彙に付与される。語形・語根の観点からケルト語的特徴を持つ語に適用され、文化的・神話的象徴性は別途 `myth` や `cultural_background` タグで併用して扱う。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "chinese",
+    "description": "中国語由来、または漢字文化圏に属する語形・語源に付与される。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "english",
+    "description": "英語由来、または英語文化圏に関連する語形・語源を持つ語に付与される。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "french",
+    "description": "フランス語由来、またはフランス語文化圏に関連する語形・語源を持つ語に付与される。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "german",
+    "description": "ドイツ語由来、またはドイツ語文化圏に関連する語形・語源を持つ語に付与される。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "greek",
+    "description": "ギリシャ語起源の語彙に付与されるタグ。語源的な由来に加え、語形・表記・語感にギリシャ語的特徴を有する語も含まれる。神話的象徴性が明確な場合は別途 `myth` タグと併用する。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "italian",
+    "description": "イタリア語由来、またはイタリア語文化圏に関連する語形・語源を持つ語に付与される。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "japanese",
+    "description": "日本語由来、または日本語として定着した語彙に付与される。和語、漢語、外来語を含み、語源に関わらず日本語的な語形・音感・使用実態を持つ語に適用される。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "latin",
+    "description": "ラテン語由来の語彙に付与されるタグ。古典ラテン語、教会ラテン語などを起源とし、語形・音感・語根にラテン語的特徴を持つ語に適用。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "nordic",
+    "description": "北欧語系（古ノルド語、スカンジナビア諸語など）に由来する語彙に付与される。語形・語根の観点から北欧語的特徴を持つ語に適用され、神話的象徴性は別途 `myth` や `heroic` タグで併用して扱う。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "russian",
+    "description": "ロシア語由来、またはスラブ語文化圏に関連する語形・語源に基づき付与される。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "spanish",
+    "description": "スペイン語由来、またはスペイン語文化圏に関連する語形・語源を持つ語に付与される。",
+    "category": "language_origin"
+  },
+  {
+    "tag_name": "archaic",
+    "description": "古風・時代遅れ・歴史的な語彙に付与される。歴史性、時代のズレ、時代考証的な古さを含む。",
+    "category": "cultural_background"
+  },
+  {
+    "tag_name": "classic",
+    "description": "古典的・伝統的な文化的背景に根ざした語彙に付与される。歴史的権威、芸術的模範性を伴う語を含む。意味的に関連する場合がある。",
+    "category": "cultural_background"
+  },
+  {
+    "tag_name": "cultural",
+    "description": "民族・地域・伝統など文化的背景を表す語彙に付与。名前・形式・言語的な文化要素を対象とする。",
+    "category": "cultural_background"
+  },
+  {
+    "tag_name": "heroic",
+    "description": "英雄性・勇敢さ・壮大さを感じさせる語彙に付与される。歴史的英雄像、戦士的ニュアンスなどに対応。classic など、文化的伝統に関わるタグと意味的に関連する場合がある。",
+    "category": "cultural_background"
+  },
+  {
+    "tag_name": "modern",
+    "description": "現代的・都市的・洗練・進歩的印象を持つ語彙に付与される。都市文化、テクノロジー、新しさ、現代的構造・感覚を含む語に対応。",
+    "category": "cultural_background"
+  },
+  {
+    "tag_name": "mystic",
+    "description": "神秘性・霊性・不可思議な性質を持つ語彙に付与される。宗教性・幻想性を含む場合もある。myth や ritual など、神話的象徴や宗教的形式を扱うタグと意味的に関連する場合がある。",
+    "category": "cultural_background"
+  },
+  {
+    "tag_name": "myth",
+    "description": "神話・伝説的性質を持つ語彙に付与される。古代宗教、象徴的存在、物語性を含む。ritual や mystic など、宗教的形式や神秘的要素に関連するタグと意味的に関連する場合がある。",
+    "category": "cultural_background"
+  },
+  {
+    "tag_name": "ritual",
+    "description": "儀式性・宗教的習慣に関連する語彙に付与される。典礼、聖性、形式的行動を含む。myth や mystic など、神話的象徴や神秘的要素を扱うタグと意味的に関連する場合がある。",
+    "category": "cultural_background"
+  },
+  {
+    "tag_name": "roman_culture",
+    "description": "古代ローマの文化・制度・神話・歴史に関連する語彙に付与される。共和政・帝政・ローマ神話・軍事制度・都市設計など、ラテン語を超えた文化的要素に対応。",
+    "category": "cultural_background"
+  },
+  {
+    "tag_name": "action",
+    "description": "行動性・動的性質を持つ語彙に適用される。動き、実行、反応、活動的な構造を含意する語に対応。主体の意図・目的・達成動作が前提となる語（例：challenge, attack）に対して使用。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "adventure",
+    "description": "探索、冒険、未知への踏み出しを表す語彙に適用。旅立ち、危険との遭遇、発見といった主題を含む。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "animal",
+    "description": "動物に関連する語彙に適用。実在または伝説上の動物名、動物的性質（敏捷さ、獰猛さ、優雅さなど）を含む印象に対応する。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "art",
+    "description": "芸術的な表現や創造性に関係する語彙に付与される。視覚芸術、造形、表現活動などを含む。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "body",
+    "description": "身体性に関わる語彙に付与される。身体の部位、身体的動作、肉体的印象などを含む。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "celestial",
+    "description": "天空・宇宙・天体的イメージを持つ語彙に適用。星、月、空、宇宙的神話、天文学的概念などに関わる印象を含む。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "command",
+    "description": "命令・統制・方向付けの含意を持つ語彙に適用。動詞的機能語や強制・制御を表す語に対応。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "dance",
+    "description": "舞踏・モーション的な要素を持つ語彙に付与される。踊り、身体の動き、ダンス文化などを含む。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "escape",
+    "description": "逃走・離脱・解放の印象を持つ語彙に適用される。競馬的には先行逃げ切りや独走状態、制約からの脱出を示す場合に対応。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "exotic",
+    "description": "異国的・非日常的で魅力的な印象を持つ語彙に適用。風変わりでエキゾチックな響きや文化的差異を強調する場合に使用される。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "floral",
+    "description": "花に関連する語彙に適用。花の名称、香り、植物的な柔らかさや美的印象を含む語に対応。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "literary",
+    "description": "文学的印象を持つ語彙に付与される。詩性、文語的形式、文学モチーフを含む語群。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "material",
+    "description": "鉱物・金属・自然素材など、具体的で物理的な実体を持つ語彙に付与される。構成素材・物質的特徴・自然由来の実態描写に焦点を置く。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "motion",
+    "description": "動き・流れ・移動に関係する語彙に付与される。スピード、加速、跳躍など運動的要素を含む。主に物理的な運動や状態変化に着目した語に適用。意図や行為主体のない自然的動きを表す語（例：flow, soar）に対して使用。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "multilingual",
+    "description": "複数の言語的影響や混成要素を持つ語彙に付与される。語源の混合や多言語風の語感を含む語群。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "music",
+    "description": "音楽に関連する語彙に付与される。ジャンル、リズム、音楽用語、音楽的背景などを含む語群。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "nature",
+    "description": "自然界に関連する語彙に付与される。植物、地形、気象、季節など自然物や現象を含む語群。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "phonetic",
+    "description": "音感や発音印象に関連する語彙に付与される。響き、リズム、流暢さ、語音的魅力などを含む。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "place",
+    "description": "地理的・空間的な名称に関連する語彙に付与される。地名、場所の印象、象徴的なロケーションなどを示す語群に対応。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "pop",
+    "description": "大衆文化やポップカルチャーに関連する印象・背景を持つ語彙に適用。音感・軽快さ・親しみやすさなども含む。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "space",
+    "description": "空間的広がりや抽象的な距離感に関係する語彙に付与される。宇宙、空、広がり、無限など。",
+    "category": "descriptive_domain"
+  },
+  {
+    "tag_name": "artificial",
+    "description": "人工的・人為的・技術的な印象を持つ語に適用されるタグ。自然発生的でない語感、SF・未来・テクノロジー的な命名感を伴う語彙に対応する。GPTの印象分類および fantasy タグとの対照軸として機能する。",
+    "category": "fantasy_artificiality"
+  },
+  {
+    "tag_name": "creative",
+    "description": "創造的・独創的な発想や構築性を持つ語彙に適用。既存形式にとらわれず、新たな印象や構造をもつ語に対応。",
+    "category": "fantasy_artificiality"
+  },
+  {
+    "tag_name": "fantasy",
+    "description": "幻想的・空想的な語感を持つ語彙に付与される。非現実性・創作的想像力の要素を含む語群。",
+    "category": "fantasy_artificiality"
+  },
+  {
+    "tag_name": "commerce",
+    "description": "取引・経済・価値交換に関連する語彙に適用。購入、売買、価格、富、対価の概念を含む語に対応。",
+    "category": "field_domain"
+  },
+  {
+    "tag_name": "culinary",
+    "description": "食、料理、味覚、食材に関連する語彙に適用。料理的な印象、食品名、味覚連想に基づく命名語に対応。",
+    "category": "field_domain"
+  },
+  {
+    "tag_name": "legal",
+    "description": "法制度・法律・正義に関連する語彙に適用。法的用語、裁判概念、規範性を持つ語に対応する。",
+    "category": "field_domain"
+  },
+  {
+    "tag_name": "marine",
+    "description": "海洋・水域・海に関するテーマを含む語彙に適用。海、潮、波、航海、生物海洋などの語感や意味に対応。",
+    "category": "field_domain"
+  },
+  {
+    "tag_name": "medicine",
+    "description": "治癒、健康、医療に関連する語彙に適用。伝統医学、民間療法、治療的象徴を含む語に対応。",
+    "category": "field_domain"
+  },
+  {
+    "tag_name": "military",
+    "description": "軍事・戦闘・武力に関連する語彙に適用。兵士、戦略、戦争、交戦、武装などを想起させる語に対応。",
+    "category": "field_domain"
+  },
+  {
+    "tag_name": "role",
+    "description": "社会的または機能的な役割・立場を示す語彙に適用。リーダー、保護者、仲間、使者など、人間関係や集団内でのポジション・職能を表す語群に対応。",
+    "category": "field_domain"
+  },
+  {
+    "tag_name": "social",
+    "description": "社会的な関係性や結びつきを示す語彙に適用。友情、家族、集団、仲間、共同体など、人間同士の社会的絆やつながりを意味する語群に対応。",
+    "category": "field_domain"
+  },
+  {
+    "tag_name": "textile",
+    "description": "布地・織物・素材に関する語彙に適用。ファブリックや質感に由来する命名語・構造語に対応。",
+    "category": "field_domain"
+  },
+  {
+    "tag_name": "beauty",
+    "description": "視覚的または印象的に美しさ・優雅さを感じさせる語彙に付与される。芸術的洗練、上品さ、感性的調和に基づく美的価値を象徴する語に適用される。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "colloquial",
+    "description": "話し言葉的・くだけた印象を持つ語彙に付与される。口語表現・軽快さ・俗語感が含まれる。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "color",
+    "description": "色彩を直接的に表す語彙に付与される。純粋な色名や色調・視覚的印象に焦点を持つ語に適用され、装飾・象徴・印象強調の用途を含む。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "emotion",
+    "description": "感情的要素を持つ語彙に付与される。愛・悲しみ・喜び・激情など内面的状態を含む語群。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "excellence",
+    "description": "優秀さ・卓越性・完成度の高さを評価する語彙に付与される。性能や資質、成果に関する肯定的評価に基づく語に適用される。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "fate",
+    "description": "運命・宿命・定めといった不可避な未来や力を象徴する語彙に付与される。予見・抗えない力・超自然的意志などを含意する。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "femininity",
+    "description": "女性的・柔らかさ・優美さ・感受性といった女性性に関連する語彙に付与される。感情性や母性的性質も含む。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "intellect",
+    "description": "知性・学識・思考力に関する語彙に付与される。論理性、教育、知的印象などを含む。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "intention",
+    "description": "意志・目的・目標・狙いといった内面的志向性に関連する語彙に付与される。行動の方向性や意図された未来像を含意する。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "luxury",
+    "description": "高級感・格式・贅沢さを感じさせる語彙に付与される。財や空間、雰囲気における豊かさやステータスの印象を表す語に適用される。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "masculinity",
+    "description": "男性的・剛健・勇敢・力強さなど、男性性に関連する語彙に付与される。社会的役割・行動様式・性格的特徴を含意する。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "moral",
+    "description": "倫理・道徳的判断に関連する語彙に適用。善悪、規範、価値判断を内包する意味要素に対応する。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "mystery",
+    "description": "謎・不可知・隠された真実といった神秘的印象を持つ語彙に付与される。朧げ・不明瞭・探究心をかき立てる性質を含む語に適用される。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "negative_emotion",
+    "description": "怒り・悲しみ・恐怖・憎しみ・絶望など、否定的・強烈な内面的感情を含む語彙に付与される。暴力性や衝動性、深い内向的苦悩を伴う語にも対応。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "nobility",
+    "description": "高貴さ・気高さ・品格といった印象を持つ語彙に付与される。王族・貴族・精神的威厳や格式と結びついた語に適用される。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "personality",
+    "description": "人格・性格・人物像に関わる語彙に適用。キャラクター性、態度、内面性などを含意する場合に対応。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "power",
+    "description": "力・影響力・支配的印象を持つ語彙に付与される。強さ、支配性、覇気などの語感を含む。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "romantic",
+    "description": "情熱・恋愛・官能性に関連する語彙に適用。ロマンティックな印象や情緒的ニュアンスを含む場合に対応。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "softness",
+    "description": "柔らかさ・穏やかさ・やさしさといった印象を与える語彙に付与される。触感や音感、感情的な穏和さに基づく語に適用される。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "speed",
+    "description": "速さ・俊敏さ・鋭敏さに関連する語彙に付与される。風・雷・刃など物理的・比喩的に速度感を伴う語に適用される。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "symbol",
+    "description": "象徴的・寓意的な意味構造を持つ語彙に付与。抽象的意味や隠喩的含意を含む命名・構造語に適用される。",
+    "category": "semantic_feature"
+  },
+  {
+    "tag_name": "abbreviation_form",
+    "description": "略語・短縮語・省略表現に特化した語彙に付与されるタグ。長語を圧縮した形式、頭字語、短縮形の命名語に対応し、機能的・視認性重視の語形成に起因する場合を含む。",
+    "category": "structural_function"
+  },
+  {
+    "tag_name": "name",
+    "description": "名前らしさ、命名語彙としての響き・印象・形式を持つ語に付与される。固有名化が可能な語彙、または命名対象語群の中核を成す語に対応。所有構造や科学的接尾語等とは独立して機能する。",
+    "category": "structural_function"
+  },
+  {
+    "tag_name": "possessive",
+    "description": "所有関係・帰属表現を含む語彙に適用。命名構造において 's、de、di など所有・帰属を表す形式を持つ語に対応。",
+    "category": "structural_function"
+  },
+  {
+    "tag_name": "future",
+    "description": "未来志向・希望・予見的性質を持つ語彙に付与される。目標・展望・時間的前進を暗示する語群。",
+    "category": "temporal_scale"
+  },
+  {
+    "tag_name": "memory",
+    "description": "記憶・回想・過去とのつながりを示す語彙に付与される。歴史的背景や懐古的印象を持つ語群。",
+    "category": "temporal_scale"
+  },
+  {
+    "tag_name": "temporal",
+    "description": "時間的性質・時代感（古さ／新しさ）・持続性を持つ語彙に付与。『過去性』や『未来性』の暗示を含む。",
+    "category": "temporal_scale"
+  }
+]
