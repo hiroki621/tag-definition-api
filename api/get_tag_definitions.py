@@ -1,15 +1,7 @@
-import json
-from http.server import BaseHTTPRequestHandler
+import { NextApiRequest, NextApiResponse } from 'next';
+import tagDefinitions from '../../data/tag_definitions.json';
 
-class handler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        if self.path == "/api/get_tag_definitions":
-            with open("tag_definitions.json", "r", encoding="utf-8") as f:
-                data = json.load(f)
-            self.send_response(200)
-            self.send_header("Content-type", "application/json")
-            self.end_headers()
-            self.wfile.write(json.dumps(data).encode())
-        else:
-            self.send_response(404)
-            self.end_headers()
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');  // ✅ UTF-8明示
+  res.status(200).json(tagDefinitions);
+}
