@@ -1,15 +1,9 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "api/get_tag_definitions.py",
-      "use": "@vercel/python"
-    }
+    { "src": "pages/api/get_tag_definitions.ts", "use": "@vercel/node" }
   ],
   "routes": [
-    {
-      "src": "/api/get_tag_definitions",
-      "dest": "api/get_tag_definitions.py"
-    }
+    { "src": "/api/get_tag_definitions", "dest": "/pages/api/get_tag_definitions.ts" }
   ]
 }
